@@ -1,0 +1,55 @@
+{
+  "name": "@dfhernandez/conferences-mobile",
+  "version": "1.0.0",
+  "description": "Capacitor App written in Javascript to transform builds to be deployed to mobile platforms",
+  "main": "index.js",
+  "private": true,
+  "engines": {
+    "node": ">=14"
+  },
+  "keywords": [
+    "android",
+    "capacitor",
+    "commland",
+    "conference",
+    "ios",
+    "mobile"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major",
+    "sync-root": "node ./scripts/sync-root.js",
+    "bump-version": "node ./scripts/bump-version.js"
+  },
+  "dependencies": {
+    "@capacitor/android": "^4.0.0",
+    "@capacitor/app": "^4.1.1",
+    "@capacitor/camera": "^4.0.0",
+    "@capacitor/core": "^4.0.0",
+    "@capacitor/device": "^4.0.0",
+    "@capacitor/ios": "^4.0.0",
+    "@capacitor/splash-screen": "^4.1.1",
+    "@capacitor/status-bar": "^4.0.0",
+    "@capacitor/toast": "^4.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^2.0.4",
+    "@capacitor/cli": "^4.0.0",
+    "husky": "^7.0.4",
+    "standard-version": "^9.3.2"
+  },
+  "author": "Daniel Hernandez <fhernandez@2600hz.com> (https://github.com/shark764)",
+  "license": "MIT",
+  "homepage": "https://github.com/shark764/commland-dielectric#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shark764/commland-dielectric.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shark764/commland-dielectric/issues"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "appId": "com.commland.conferencesmobile",
+  "appName": "comm.land Conferences",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "dist",
+  "backgroundColor": "black",
+  "ios": {
+    "scheme": "ConferenceMobile"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    },
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    }
+  },
+  "cordova": {}
+}
